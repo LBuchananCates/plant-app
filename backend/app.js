@@ -12,11 +12,24 @@ async function getPlantNames() {
       `https://perenual.com/api/species-list?key=${apiKey}&page=${pageNum}`
     );
     const json = await response.json();
-    const plantNames = json.data.map((plant) => plant.common_name);
-    plantArray.push(plantNames);
+
+    // return one array of objects
+    // ** map returns an array, isn't destructive
+    // map over data
+    // write function inside of map that returns smth that all goes inside array
+    // inside map function, return an object
+    const plants = json.data.map((plant) => {
+      // returning object
+      return {
+        commonName: plant.common_name,
+        scientificName: plant.scientific_name,
+        watering: plant.watering,
+        sunlight: plant.sunlight,
+      };
+    });
+    plantArray.push(plants);
   }
-  const plantTitles = plantArray.flat();
-  return plantTitles;
+  return plantArray.flat();
 }
 
 getPlantNames().then((names) => {

@@ -1,152 +1,906 @@
 [
-  "European Silver Fir",
-  "Pyramidalis Silver Fir",
-  "White Fir",
-  "Candicans White Fir",
-  "Fraser Fir",
-  "Golden Korean Fir",
-  "Alpine Fir",
-  "Blue Spanish Fir",
-  "Noble Fir",
-  "Johin Japanese Maple",
-  "Snakebark Maple",
-  "Amur Maple",
-  "Flame Amur Maple",
-  "Red Rhapsody Amur Maple",
-  "Ruby Slippers Amur Maple",
-  "Paperbark Maple",
-  "Fullmoon Maple",
-  "Cutleaf Fullmoon Maple",
-  "Attaryi Fullmoon Maple*",
-  "Golden Fullmoon Maple",
-  "Emmett's Pumpkin Fullmoon Maple",
-  "Green Cascade Maple",
-  "Big Leaf Maple",
-  "Mocha Rose Big Leaf Maple",
-  "Flamingo Boxelder",
-  "Kelly's Gold Boxelder",
-  "Japanese Maple",
-  "Aka Shigitatsu Sawa Japanese Maple",
-  "Alpenweiss Variegated Dwarf Japanese Maple*",
-  "Ao Shime No Uchi Japanese Maple",
-  "Aoyagi Japanese Maple*",
-  "Arakawa Cork Bark Japanese Maple",
-  "Asahi Zuru Japanese Maple",
-  "Ribbon-leaf Japanese Maple*",
-  "Purple-Leaf Japanese Maple",
-  "Aureum Japanese Maple*",
-  "Autumn Fire Japanese Maple",
-  "Azuma Murasaki Japanese Maple",
-  "Beni Kawa Coral Bark Japanese Maple*",
-  "Beni Otake Japanese Maple",
-  "Beni Schichihenge Japanese Maple",
-  "Beni Tsukasa Japanese Maple*",
-  "Bloodgood Japanese Maple",
-  "Bonfire Japanese Maple",
-  "Brandt's Dwarf Japanese Maple",
-  "Burgundy Lace Japanese Maple",
-  "Butterfly Variegated Japanese Maple",
-  "Chantilly Lace Japanese Maple",
-  "Chishio Japanese Maple",
-  "Chitose Yama Japanese Maple",
-  "Coonara Pygmy Japanese Maple",
-  "Crimson Prince Japanese Maple*",
-  "Ever Red Lace-Leaf Japanese Maple*",
-  "Glowing Embers Japanese Maple*",
-  "Grandma Ghost Japanese Maple*",
-  "Green Hornet Cutleaf Japanese Maple*",
-  "Green Mist Japanese Maple*",
-  "Shirazz Japanese Maple",
-  "Hessei Japanese Maple",
-  "Higasa Yama Japanese Maple",
-  "Hogyoku Japanese Maple",
-  "Hubb's Red Willow Japanese Maple",
-  "Iijima Sunago Japanese Maple",
-  "Inaba Shidare Cutleaf Japanese Maple",
-  "Inazuma Japanese Maple",
-  "Jiro Shidare Japanese Maple",
-  "Kagiri Nishiki Japanese Maple",
-  "Kamagata Japanese Maple",
-  "Kandy Kitchen Japanese Maple",
-  "Karasu Gawa Japanese Maple*",
-  "Kasagi Yama Japanese Maple",
-  "Katsura Japanese Maple",
-  "Kiri Nishiki Japanese Maple",
-  "Kiyohime Japanese Maple",
-  "Koshibori Nishiki Japanese Maple*",
-  "Koto No Ito Japanese Maple",
-  "Linearilobum Japanese Maple",
-  "Margaret Bee Japanese Maple",
-  "Mikawa Yatsubusa Japanese Maple",
-  "Mikazuki Japanese Maple",
-  "Moonfire Japanese Maple",
-  "Nishiki Gawa Japanese Maple*",
-  "Nuresagi Japanese Maple",
-  "Okagami Japanese Maple",
-  "Okushimo Japanese Maple",
-  "Orange Dream Japanese Maple",
-  "Orangeola Cutleaf Japanese Maple",
-  "Oregon Sunset Japanese Maple",
-  "Oridono Nishiki Japanese Maple*",
-  "Ornatum Japanese Maple*",
-  "Osakazuki Japanese Maple",
-  "Oshio Beni Japanese Maple",
-  "Oshu Shidare Japanese Maple",
-  "Otake Japanese Maple",
-  "Otome Zakura Japanese Maple*",
-  "Palmatifidum Japanese Maple*",
-  "Peaches And Cream Japanese Maple",
-  "Pendulum Julian Japanese Maple*",
-  "Pink Lace Japanese Maple*",
-  "Pixie Japanese Maple",
-  "Purple Ghost Japanese Maple*",
-  "Red Dragon Japanese Maple",
-  "Red Feathers Japanese Maple*",
-  "Red Filigree Lace Japanese Maple",
-  "Dwarf Red Pygmy Japanese Maple",
-  "Red Select Japanese Maple*",
-  "Rhode Island Red Japanese Maple",
-  "Ruby Ridge Japanese Maple*",
-  "Ruby Stars Japanese Maple*",
-  "Ruslyn In The Pink Japanese Maple",
-  "Ryusen Japanese Maple",
-  "Sagara Nishiki Japanese Maple",
-  "Samurai Sword Japanese Maple",
-  "Coral Bark Japanese Maple",
-  "Sazanami Japanese Maple",
-  "Scolopendrifolium Japanese Maple",
-  "Seiryu Japanese Maple",
-  "Shaina Japanese Maple",
-  "Sherwood Elfin Japanese Maple*",
-  "Sherwood Flame Japanese Maple",
-  "Shindeshojo Japanese Maple",
-  "Shinobuga Oka Japanese Maple*",
-  "Lions Head Japanese Maple",
-  "Shishio Hime Japanese Maple*",
-  "Spring Delight Japanese Maple",
-  "Suminagashi Japanese Maple",
-  "Tama Hime Japanese Maple",
-  "Tamukeyama Japanese Maple",
-  "Tana Japanese Maple*",
-  "Tobiosho Japanese Maple",
-  "Trompenburg Japanese Maple*",
-  "Tsukasa Silhouette Japanese Maple*",
-  "Tsuma Gaki Japanese Maple",
-  "Tsuri Nishiki Japanese Maple",
-  "Twombly's Red Sentinel Japanese Maple",
-  "Ueno Homare Japanese Maple",
-  "Floating Cloud Japanese Maple",
-  "Utsu Semi Japanese Maple",
-  "Villa Taranto Japanese Maple",
-  "Wilson's Pink Dwarf Japanese Maple",
-  "Emperor I Japanese Maple",
-  "Yellow Bird Japanese Maple",
-  "Yubae Japanese Maple*",
-  "Moosewood",
-  "Crimson King Norway Maple",
-  "Crimson Sentry Norway Maple",
-  "Harlequin Norway Maple",
-  "Emerald Queen Norway Maple",
-  "Princeton Gold Maple",
-  "Eskimo Sunset Sycamore Maple"
+  {
+    "commonName": "European Silver Fir",
+    "scientificName": ["Abies alba"],
+    "watering": "Frequent",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Pyramidalis Silver Fir",
+    "scientificName": ["Abies alba 'Pyramidalis'"],
+    "watering": "Average",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "White Fir",
+    "scientificName": ["Abies concolor"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Candicans White Fir",
+    "scientificName": ["Abies concolor 'Candicans'"],
+    "watering": "Average",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Fraser Fir",
+    "scientificName": ["Abies fraseri"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade", "filtered shade"]
+  },
+  {
+    "commonName": "Golden Korean Fir",
+    "scientificName": ["Abies koreana 'Aurea'"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Alpine Fir",
+    "scientificName": ["Abies lasiocarpa"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Blue Spanish Fir",
+    "scientificName": ["Abies pinsapo 'Glauca'"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Noble Fir",
+    "scientificName": ["Abies procera"],
+    "watering": "Average",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Johin Japanese Maple",
+    "scientificName": ["Acer 'Johin'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Snakebark Maple",
+    "scientificName": ["Acer davidii"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Amur Maple",
+    "scientificName": ["Acer ginnala"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Flame Amur Maple",
+    "scientificName": ["Acer ginnala 'Flame'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Red Rhapsody Amur Maple",
+    "scientificName": ["Acer ginnala 'Mondy'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ruby Slippers Amur Maple",
+    "scientificName": ["Acer ginnala 'Ruby Slippers'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Paperbark Maple",
+    "scientificName": ["Acer griseum"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Fullmoon Maple",
+    "scientificName": ["Acer japonicum"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Cutleaf Fullmoon Maple",
+    "scientificName": ["Acer japonicum 'Aconitifolium'"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Attaryi Fullmoon Maple*",
+    "scientificName": ["Acer japonicum 'Attaryi'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Golden Fullmoon Maple",
+    "scientificName": ["Acer japonicum 'Aureum'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Emmett's Pumpkin Fullmoon Maple",
+    "scientificName": ["Acer japonicum 'Emmett's Pumpkin'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade", "filtered shade"]
+  },
+  {
+    "commonName": "Green Cascade Maple",
+    "scientificName": ["Acer japonicum 'Green Cascade'"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Big Leaf Maple",
+    "scientificName": ["Acer macrophyllum"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Mocha Rose Big Leaf Maple",
+    "scientificName": ["Acer macrophyllum 'Mocha Rose'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Flamingo Boxelder",
+    "scientificName": ["Acer negundo 'Flamingo'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Kelly's Gold Boxelder",
+    "scientificName": ["Acer negundo 'Kelly's Gold'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Japanese Maple",
+    "scientificName": ["Acer palmatum"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Aka Shigitatsu Sawa Japanese Maple",
+    "scientificName": ["Acer palmatum 'Aka Shigitatsu Sawa'"],
+    "watering": "Frequent",
+    "sunlight": ["part sun/part shade"]
+  },
+  {
+    "commonName": "Alpenweiss Variegated Dwarf Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Alpenweiss'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ao Shime No Uchi Japanese Maple",
+    "scientificName": ["Acer palmatum 'Ao Shime No Uchi'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Aoyagi Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Aoyagi'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Arakawa Cork Bark Japanese Maple",
+    "scientificName": ["Acer palmatum 'Arakawa'"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Asahi Zuru Japanese Maple",
+    "scientificName": ["Acer palmatum 'Asahi Zuru'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ribbon-leaf Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Atrolineare'"],
+    "watering": "Minimum",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Purple-Leaf Japanese Maple",
+    "scientificName": ["Acer palmatum 'Atropurpureum'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Aureum Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Aureum'"],
+    "watering": "Average",
+    "sunlight": ["part shade", "part sun/part shade"]
+  },
+  {
+    "commonName": "Autumn Fire Japanese Maple",
+    "scientificName": ["Acer palmatum 'Autumn Fire'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Azuma Murasaki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Azuma Murasaki'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Beni Kawa Coral Bark Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Beni Kawa'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Beni Otake Japanese Maple",
+    "scientificName": ["Acer palmatum 'Beni Otake'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Beni Schichihenge Japanese Maple",
+    "scientificName": ["Acer palmatum 'Beni Schichihenge'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Beni Tsukasa Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Beni Tsukasa'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Bloodgood Japanese Maple",
+    "scientificName": ["Acer palmatum 'Bloodgood'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Bonfire Japanese Maple",
+    "scientificName": ["Acer palmatum 'Bonfire'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Brandt's Dwarf Japanese Maple",
+    "scientificName": ["Acer palmatum 'Brandt's Dwarf'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Burgundy Lace Japanese Maple",
+    "scientificName": ["Acer palmatum 'Burgundy Lace'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Butterfly Variegated Japanese Maple",
+    "scientificName": ["Acer palmatum 'Butterfly'"],
+    "watering": "Average",
+    "sunlight": ["Full sun", "part shade"]
+  },
+  {
+    "commonName": "Chantilly Lace Japanese Maple",
+    "scientificName": ["Acer palmatum 'Chantilly Lace'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Chishio Japanese Maple",
+    "scientificName": ["Acer palmatum 'Chishio'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Chitose Yama Japanese Maple",
+    "scientificName": ["Acer palmatum 'Chitose Yama'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Coonara Pygmy Japanese Maple",
+    "scientificName": ["Acer palmatum 'Coonara Pygmy'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Crimson Prince Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Crimson Prince'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ever Red Lace-Leaf Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Ever Red'"],
+    "watering": "Average",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Glowing Embers Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Glowing Embers'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Grandma Ghost Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Grandma Ghost'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Green Hornet Cutleaf Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Green Hornet'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Green Mist Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Green Mist'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Shirazz Japanese Maple",
+    "scientificName": ["Acer palmatum 'Gwen's Rose Delight'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Hessei Japanese Maple",
+    "scientificName": ["Acer palmatum 'Hessei'"],
+    "watering": "Average",
+    "sunlight": ["part shade", "part sun/part shade"]
+  },
+  {
+    "commonName": "Higasa Yama Japanese Maple",
+    "scientificName": ["Acer palmatum 'Higasa Yama'"],
+    "watering": "Average",
+    "sunlight": ["part sun/part shade", "part shade"]
+  },
+  {
+    "commonName": "Hogyoku Japanese Maple",
+    "scientificName": ["Acer palmatum 'Hogyoku'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Hubb's Red Willow Japanese Maple",
+    "scientificName": ["Acer palmatum 'Hubb's Red Willow'"],
+    "watering": "Frequent",
+    "sunlight": ["part shade", "part sun/part shade"]
+  },
+  {
+    "commonName": "Iijima Sunago Japanese Maple",
+    "scientificName": ["Acer palmatum 'Iijima Sunago'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Inaba Shidare Cutleaf Japanese Maple",
+    "scientificName": ["Acer palmatum 'Inaba Shidare'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Inazuma Japanese Maple",
+    "scientificName": ["Acer palmatum 'Inazuma'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Jiro Shidare Japanese Maple",
+    "scientificName": ["Acer palmatum 'Jiro Shidare'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Kagiri Nishiki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Kagiri Nishiki'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Kamagata Japanese Maple",
+    "scientificName": ["Acer palmatum 'Kamagata'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Kandy Kitchen Japanese Maple",
+    "scientificName": ["Acer palmatum 'Kandy Kitchen'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Karasu Gawa Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Karasu Gawa'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Kasagi Yama Japanese Maple",
+    "scientificName": ["Acer palmatum 'Kasagi Yama'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Katsura Japanese Maple",
+    "scientificName": ["Acer palmatum 'Katsura'"],
+    "watering": "Average",
+    "sunlight": ["part shade", "part sun/part shade"]
+  },
+  {
+    "commonName": "Kiri Nishiki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Kiri Nishiki'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Kiyohime Japanese Maple",
+    "scientificName": ["Acer palmatum 'Kiyohime'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Koshibori Nishiki Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Koshibori Nishiki'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Koto No Ito Japanese Maple",
+    "scientificName": ["Acer palmatum 'Koto No Ito'"],
+    "watering": "Average",
+    "sunlight": [
+      "filtered shade",
+      "full sun only if soil kept moist",
+      "part sun/part shade"
+    ]
+  },
+  {
+    "commonName": "Linearilobum Japanese Maple",
+    "scientificName": ["Acer palmatum 'Linearilobum'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Margaret Bee Japanese Maple",
+    "scientificName": ["Acer palmatum 'Margaret Bee'"],
+    "watering": "Average",
+    "sunlight": ["part shade", "part sun/part shade"]
+  },
+  {
+    "commonName": "Mikawa Yatsubusa Japanese Maple",
+    "scientificName": ["Acer palmatum 'Mikawa Yatsubusa'"],
+    "watering": "Average",
+    "sunlight": ["part shade", "part sun/part shade"]
+  },
+  {
+    "commonName": "Mikazuki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Mikazuki'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Moonfire Japanese Maple",
+    "scientificName": ["Acer palmatum 'Moonfire'"],
+    "watering": "Average",
+    "sunlight": ["part sun/part shade", "full sun"]
+  },
+  {
+    "commonName": "Nishiki Gawa Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Nishiki Gawa'"],
+    "watering": "Average",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Nuresagi Japanese Maple",
+    "scientificName": ["Acer palmatum 'Nuresagi'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Okagami Japanese Maple",
+    "scientificName": ["Acer palmatum 'Okagami'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Okushimo Japanese Maple",
+    "scientificName": ["Acer palmatum 'Okushimo'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Orange Dream Japanese Maple",
+    "scientificName": ["Acer palmatum 'Orange Dream'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Orangeola Cutleaf Japanese Maple",
+    "scientificName": ["Acer palmatum 'Orangeola'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Oregon Sunset Japanese Maple",
+    "scientificName": ["Acer palmatum 'Oregon Sunset'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Oridono Nishiki Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Oridono Nishiki'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ornatum Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Ornatum'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Osakazuki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Osakazuki'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Oshio Beni Japanese Maple",
+    "scientificName": ["Acer palmatum 'Oshio Beni'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Oshu Shidare Japanese Maple",
+    "scientificName": ["Acer palmatum 'Oshu Shidare'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Otake Japanese Maple",
+    "scientificName": ["Acer palmatum 'Otake'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Otome Zakura Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Otome Zakura'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Palmatifidum Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Palmatifidum'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Peaches And Cream Japanese Maple",
+    "scientificName": ["Acer palmatum 'Peaches And Cream'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Pendulum Julian Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Pendulum Julian'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Pink Lace Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Pink Lace'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Pixie Japanese Maple",
+    "scientificName": ["Acer palmatum 'Pixie'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Purple Ghost Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Purple Ghost'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Red Dragon Japanese Maple",
+    "scientificName": ["Acer palmatum 'Red Dragon'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Red Feathers Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Red Feathers'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Red Filigree Lace Japanese Maple",
+    "scientificName": ["Acer palmatum 'Red Filigree Lace'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Dwarf Red Pygmy Japanese Maple",
+    "scientificName": ["Acer palmatum 'Red Pygmy'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Red Select Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Red Select'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Rhode Island Red Japanese Maple",
+    "scientificName": ["Acer palmatum 'Rhode Island Red'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ruby Ridge Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Ruby Ridge'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ruby Stars Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Ruby Stars'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ruslyn In The Pink Japanese Maple",
+    "scientificName": ["Acer palmatum 'Ruslyn In The Pink'"],
+    "watering": "Frequent",
+    "sunlight": ["part sun/part shade", "part shade"]
+  },
+  {
+    "commonName": "Ryusen Japanese Maple",
+    "scientificName": ["Acer palmatum 'Ryusen'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Sagara Nishiki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Sagara Nishiki'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Samurai Sword Japanese Maple",
+    "scientificName": ["Acer palmatum 'Samarzam'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Coral Bark Japanese Maple",
+    "scientificName": ["Acer palmatum 'Sango Kaku'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Sazanami Japanese Maple",
+    "scientificName": ["Acer palmatum 'Sazanami'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Scolopendrifolium Japanese Maple",
+    "scientificName": ["Acer palmatum 'Scolopendrifolium'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Seiryu Japanese Maple",
+    "scientificName": ["Acer palmatum 'Seiryu'"],
+    "watering": "Frequent",
+    "sunlight": ["part sun/part shade"]
+  },
+  {
+    "commonName": "Shaina Japanese Maple",
+    "scientificName": ["Acer palmatum 'Shaina'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Sherwood Elfin Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Sherwood Elfin'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Sherwood Flame Japanese Maple",
+    "scientificName": ["Acer palmatum 'Sherwood Flame'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Shindeshojo Japanese Maple",
+    "scientificName": ["Acer palmatum 'Shindeshojo'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Shinobuga Oka Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Shinobuga Oka'"],
+    "watering": "Average",
+    "sunlight": ["full sun"]
+  },
+  {
+    "commonName": "Lions Head Japanese Maple",
+    "scientificName": ["Acer palmatum 'Shishigashira'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Shishio Hime Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Shishio Hime'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Spring Delight Japanese Maple",
+    "scientificName": ["Acer palmatum 'Spring Delight'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Suminagashi Japanese Maple",
+    "scientificName": ["Acer palmatum 'Suminagashi'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Tama Hime Japanese Maple",
+    "scientificName": ["Acer palmatum 'Tama Hime'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Tamukeyama Japanese Maple",
+    "scientificName": ["Acer palmatum 'Tamukeyama'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Tana Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Tana'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Tobiosho Japanese Maple",
+    "scientificName": ["Acer palmatum 'Tobiosho'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Trompenburg Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Trompenburg'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Tsukasa Silhouette Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Tsukasa Silhouette'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Tsuma Gaki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Tsuma Gaki'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Tsuri Nishiki Japanese Maple",
+    "scientificName": ["Acer palmatum 'Tsuri Nishiki'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Twombly's Red Sentinel Japanese Maple",
+    "scientificName": ["Acer palmatum 'Twombly's Red Sentinel'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Ueno Homare Japanese Maple",
+    "scientificName": ["Acer palmatum 'Ueno Homare'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Floating Cloud Japanese Maple",
+    "scientificName": ["Acer palmatum 'Ukigumo'"],
+    "watering": "Frequent",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Utsu Semi Japanese Maple",
+    "scientificName": ["Acer palmatum 'Utsu Semi'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Villa Taranto Japanese Maple",
+    "scientificName": ["Acer palmatum 'Villa Taranto'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Wilson's Pink Dwarf Japanese Maple",
+    "scientificName": ["Acer palmatum 'Wilson's Pink Dwarf'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Emperor I Japanese Maple",
+    "scientificName": ["Acer palmatum 'Wolff'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Yellow Bird Japanese Maple",
+    "scientificName": ["Acer palmatum 'Yellow Bird'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Yubae Japanese Maple*",
+    "scientificName": ["Acer palmatum 'Yubae'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Moosewood",
+    "scientificName": ["Acer pensylvanicum"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  },
+  {
+    "commonName": "Crimson King Norway Maple",
+    "scientificName": ["Acer platanoides 'Crimson King'"],
+    "watering": "Average",
+    "sunlight": ["part sun/part shade", "full sun"]
+  },
+  {
+    "commonName": "Crimson Sentry Norway Maple",
+    "scientificName": ["Acer platanoides 'Crimson Sentry'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Harlequin Norway Maple",
+    "scientificName": ["Acer platanoides 'Drummondii'"],
+    "watering": "Minimum",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Emerald Queen Norway Maple",
+    "scientificName": ["Acer platanoides 'Emerald Queen'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Princeton Gold Maple",
+    "scientificName": ["Acer platanoides 'Princeton Gold'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part sun/part shade"]
+  },
+  {
+    "commonName": "Eskimo Sunset Sycamore Maple",
+    "scientificName": ["Acer pseudoplatanus 'Eskimo Sunset'"],
+    "watering": "Average",
+    "sunlight": ["full sun", "part shade"]
+  }
 ]
