@@ -19,10 +19,11 @@ async function getPlantNames() {
     // write function inside of map that returns smth that all goes inside array
     // inside map function, return an object
     const plants = json.data.map((plant) => {
+      console.log(plant);
       // returning object
       return {
         commonName: plant.common_name,
-        scientificName: plant.scientific_name,
+        scientificName: plant.scientific_name[0],
         watering: plant.watering,
         sunlight: plant.sunlight,
       };
