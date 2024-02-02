@@ -14,16 +14,18 @@
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--vanilla);
-  margin: 10px;
+  margin: 0 auto;
 }
 
 header {
   display: flex;
   justify-content: space-around;
+  width: 100vw;
+  background-color: var(--cerulean);
 }
 
 header button {
-  background-color: var(--moss-green);
+  background-color: var(--cerulean);
   color: var(--vanilla);
   font-size: larger;
   font-weight: 600;
@@ -45,11 +47,12 @@ form {
   gap: 20px;
 }
 
-h1 {
+p {
   display: flex;
-  margin: auto;
+  font-size: 40px;
   font-weight: 700;
-  color: var(--gamboge);
+  color: var(--cerulean);
+  margin: 40px 0;
 }
 
 input {

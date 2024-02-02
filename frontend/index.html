@@ -14,25 +14,25 @@
     <header>
       <button class="header__home-button">Home</button>
       <button class="header__random-button">Random plant!</button>
-      <button>Menu</button>
     </header>
     <main>
-      <h1>Plant Search</h1>
-      <form id="search-form">
+      <form id="search-form" autocomplete="off">
+        <p>Plant Search</p>
         <input
+          class="search"
           type="search"
           name="search"
           id="search"
-          placeholder="search for a plant!"
+          placeholder="Search for a Plant!"
         />
+        <ul class="suggestions"></ul>
         <button class="search-button" onclick="fetchPlant()">Search</button>
       </form>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" crossorigin="anonymous"></script>
   </body>
 </html>
 
 <!-- header with home icon -->
 
 <!-- icons: camera, plant, magnifying glass, water droplet, heat, fun facts-->
-<!-- latin names of plants in tiny capital letters -->
