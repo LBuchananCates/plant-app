@@ -1,11 +1,11 @@
-// turn data into array
 const endpoint = "../backend/data.json";
 
 // fetch json data
 fetch(endpoint)
   .then((res) => res.json())
-  // .then((data) => plants.push(...data))
-  .then((data) => console.log(data));
+  .then((data) => {
+    createPlantListing(data);
+  });
 
 // define findMatches function
 function findMatches(wordToMatch, plantArray) {
@@ -15,12 +15,22 @@ function findMatches(wordToMatch, plantArray) {
   });
 }
 
-function createBulletList() {
-  // grab first 5 plants from data
-  // for each plant, =
+let plants = [];
+
+// create plant listing
+function createPlantListing(info) {
+  console.log(info);
   // create li with plant names use innerText
-  // put inside ul
-  // put ul in document.body
+  const plantLi = document.createElement("li");
+  plantLi.innerText = info[(0, 1)].commonName;
+  plantLi.className = "plant-listing";
+  // create ul
+  const newUl = document.createElement("ul");
+  // append plantLi to newUl
+  newUl.append(plantLi);
+  // append newUl to form in main
+  const form = document.getElementById("search-form");
+  form.append(newUl);
 }
 
 // display matches from previous funciton
