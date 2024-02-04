@@ -21,11 +21,12 @@ header {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  background-color: var(--cerulean);
+  background-color: var(--moss-green);
+  height: 3.5rem;
 }
 
 header button {
-  background-color: var(--cerulean);
+  background-color: var(--hunter-green);
   color: var(--vanilla);
   font-size: larger;
   font-weight: 600;
@@ -44,7 +45,7 @@ form {
   align-items: center;
   color: var(--gamboge);
   margin: auto;
-  gap: 20px;
+  gap: 30px;
 }
 
 p {
@@ -62,6 +63,19 @@ input {
   border-radius: 15px;
   padding: 10px 15px;
   margin: auto;
+  min-width: 65vw;
+  box-shadow: 0px 0px 25px var(--hunter-green);
+}
+
+.suggestions {
+  background-color: white;
+  color: var(--dim-gray);
+  min-width: 60vw;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin: auto;
+  position: relative;
+  bottom: 25px;
 }
 
 .search-button {
@@ -72,10 +86,10 @@ input {
   padding: 10px 20px;
 }
 
-/* img {
+img {
   width: 200px;
   padding: 10px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0px 0px 20px var(--hunter-green);
-} */
+}
