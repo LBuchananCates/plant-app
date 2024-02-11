@@ -67,6 +67,14 @@ input {
   box-shadow: 0px 0px 25px var(--hunter-green);
 }
 
+.no-results-found {
+  color: #721c24;
+  background-color: #f8d7da;
+
+  padding: 10px 40px;
+  border-radius: 15px;
+}
+
 .suggestions {
   background-color: white;
   color: var(--dim-gray);
@@ -76,6 +84,7 @@ input {
   margin: auto;
   position: relative;
   bottom: 25px;
+  transition: margin-right 2s ease-in-out;
 }
 
 .search-button {
