@@ -52,9 +52,28 @@ input.addEventListener("keyup", (e) => {
   clearTimeout(timeout);
   // Make a new timeout set to go off in 1000ms (1 second)
   timeout = setTimeout(() => {
+    const noResultsMsg = document.querySelector(".no-results-found");
+    if (noResultsMsg) {
+      noResultsMsg.remove();
+    }
     // run code when user is done typing
     // go find plants
     const plantMatches = findMatches(input.value);
-    displayPlantListings(plantMatches);
+    if (plantMatches.length > 0) {
+      displayPlantListings(plantMatches);
+    } else {
+      const suggestionsUl = document.querySelector(".suggestions");
+      if (suggestionsUl) {
+        suggestionsUl.remove();
+      }
+
+      // create p
+      const noResults = document.createElement("p");
+      noResults.innerText = "No results found!";
+      noResults.className = "no-results-found";
+      const searchForm = document.querySelector("#search-form");
+      // append to search form
+      searchForm.appendChild(noResults);
+    }
   }, 1000);
 });
