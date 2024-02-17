@@ -17,7 +17,15 @@ function displayPlantListings(plants) {
 
   plants.forEach((plant) => {
     const plantLi = document.createElement("li");
-    plantLi.innerText = plant.commonName;
+    // plantLi.innerText = plant.commonName;
+    // define anchor tag for href
+    const plantLink = document.createElement("a");
+    // use google.com as link example
+    const plantPage = "http://google.com";
+    plantLink.setAttribute("href", plantPage);
+    plantLink.innerHTML = plant.commonName;
+    // append a tag to plantLi
+    plantLi.appendChild(plantLink);
     suggestionsUl.appendChild(plantLi);
   });
 }
@@ -56,7 +64,6 @@ input.addEventListener("keyup", (e) => {
     if (noResultsMsg) {
       noResultsMsg.remove();
     }
-    // run code when user is done typing
     // go find plants
     const plantMatches = findMatches(input.value);
     if (plantMatches.length > 0) {
@@ -66,14 +73,63 @@ input.addEventListener("keyup", (e) => {
       if (suggestionsUl) {
         suggestionsUl.remove();
       }
-
-      // create p
       const noResults = document.createElement("p");
       noResults.innerText = "No results found!";
       noResults.className = "no-results-found";
       const searchForm = document.querySelector("#search-form");
-      // append to search form
       searchForm.appendChild(noResults);
     }
   }, 1000);
 });
+
+// make array of arrays for pagination
+// make paginate function that takes array of items, # of items per page, container element to display pagination controls
+// make little buttons for the pages
+function paginate(items, itemsPerPage, paginationContainer) {
+  let currentPage = 1;
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+  function showItems(page) {
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const pageItems = items.slice(startIndex, endIndex);
+
+    const itemsContainer = document.querySelector("#items");
+    itemsContainer.innerHTML = "";
+
+    pageItems.forEach((item) => {
+      const li = document.createElement("li");
+      li.innerText = item;
+      itemsContainer.appendChild(li);
+    });
+  }
+
+  function setupPagination() {
+    const pagination = document.querySelector(paginationContainer);
+    pagination.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+      const link = document.createElement("a");
+      link.href = "#";
+      link.innerText = i;
+
+      if (i === currentPage) {
+        link.classList.add("active");
+      }
+
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        currentPage = i;
+        showItems(currentPage);
+
+        const currentActive = pagination.querySelector(".active");
+        currentActive.classList.remove("active");
+        link.classList.add("active");
+      });
+
+      pagination.appendChild(link);
+    }
+  }
+
+  showItems(currentPage);
+  setupPagination();
+}
