@@ -64,13 +64,13 @@ input {
   padding: 10px 15px;
   margin: auto;
   min-width: 65vw;
-  box-shadow: 0px 0px 25px var(--hunter-green);
+  box-shadow: 0px 0px 25px var(--gamboge);
 }
 
 .no-results-found {
   color: #721c24;
   background-color: #f8d7da;
-
+  font-size: 1.5rem;
   padding: 10px 40px;
   border-radius: 15px;
 }
@@ -92,8 +92,19 @@ input {
 }
 
 /* displays first 15 listed items */
-.suggestions li:nth-of-type(1n + 15) {
+.suggestions li:nth-of-type(1n + 20) {
   display: none;
+}
+
+a {
+  color: var(--moss-green);
+  font-size: medium;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gamboge);
 }
 
 .search-button {
