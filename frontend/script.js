@@ -3,10 +3,8 @@ const endpoint = "../backend/data.json";
 let plants = [];
 
 function displayPlantListings(plants) {
-  // if it exists
   let suggestionsUl = document.querySelector(".suggestions");
   if (suggestionsUl) {
-    // then remove lis
     suggestionsUl.textContent = "";
   } else {
     suggestionsUl = document.createElement("ul");
@@ -15,6 +13,7 @@ function displayPlantListings(plants) {
     searchForm.appendChild(suggestionsUl);
   }
 
+  // creating inidvidual plant li
   plants.forEach((plant) => {
     const plantLi = document.createElement("li");
     // define anchor tag for href
@@ -52,6 +51,15 @@ fetch(endpoint)
     plants = data;
   });
 
+function groupPages(arr) {
+  const pages = [];
+  while (arr.length) {
+    // push every 10 into array
+    pages.push(arr.splice(0, 10));
+  }
+  return pages;
+}
+
 const input = document.querySelector("#search-input");
 let timeout;
 input.addEventListener("keyup", (e) => {
@@ -66,6 +74,8 @@ input.addEventListener("keyup", (e) => {
     const plantMatches = findMatches(input.value);
     if (plantMatches.length > 0) {
       displayPlantListings(plantMatches);
+      const pages = groupPages(plantMatches);
+      console.log(pages);
     } else {
       const suggestionsUl = document.querySelector(".suggestions");
       if (suggestionsUl) {
@@ -81,20 +91,6 @@ input.addEventListener("keyup", (e) => {
 });
 
 // make array of arrays for pagination
+
 // make paginate function that takes array of items, # of items per page, container element to display pagination controls
 // function will create and display pagination controls and update the displayed items based on the selected page.
-function paginate(items, itemsPerPage, paginationContainer) {
-  let currentPage = 1;
-  // const itemsPerPage = 20;
-  const totalPages = Math.ceil(items.length / itemsPerPage);
-}
-
-function showItems(page) {
-  // page 1:
-  // 1 - 1 = 0 * 20 = 0 <-- startIndex
-  const startIndex = (page - 1) * itemsPerPage;
-  // 0 + 20 = 20 <-- itemsPerPage
-  const endIndex = startIndex + itemsPerPage;
-  // items.slice(0, 20)
-  const pageItems = items.slice(startIndex, endIndex);
-}
