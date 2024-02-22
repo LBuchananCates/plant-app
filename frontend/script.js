@@ -17,7 +17,6 @@ function displayPlantListings(plants) {
 
   plants.forEach((plant) => {
     const plantLi = document.createElement("li");
-    // plantLi.innerText = plant.commonName;
     // define anchor tag for href
     const plantLink = document.createElement("a");
     // use google.com as link example
@@ -53,7 +52,6 @@ fetch(endpoint)
     plants = data;
   });
 
-// as new information typed, update matches WORKS
 const input = document.querySelector("#search-input");
 let timeout;
 input.addEventListener("keyup", (e) => {
@@ -84,52 +82,19 @@ input.addEventListener("keyup", (e) => {
 
 // make array of arrays for pagination
 // make paginate function that takes array of items, # of items per page, container element to display pagination controls
-// make little buttons for the pages
+// function will create and display pagination controls and update the displayed items based on the selected page.
 function paginate(items, itemsPerPage, paginationContainer) {
   let currentPage = 1;
+  // const itemsPerPage = 20;
   const totalPages = Math.ceil(items.length / itemsPerPage);
-  function showItems(page) {
-    const startIndex = (page - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const pageItems = items.slice(startIndex, endIndex);
+}
 
-    const itemsContainer = document.querySelector("#items");
-    itemsContainer.innerHTML = "";
-
-    pageItems.forEach((item) => {
-      const li = document.createElement("li");
-      li.innerText = item;
-      itemsContainer.appendChild(li);
-    });
-  }
-
-  function setupPagination() {
-    const pagination = document.querySelector(paginationContainer);
-    pagination.innerHTML = "";
-
-    for (let i = 1; i <= totalPages; i++) {
-      const link = document.createElement("a");
-      link.href = "#";
-      link.innerText = i;
-
-      if (i === currentPage) {
-        link.classList.add("active");
-      }
-
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        currentPage = i;
-        showItems(currentPage);
-
-        const currentActive = pagination.querySelector(".active");
-        currentActive.classList.remove("active");
-        link.classList.add("active");
-      });
-
-      pagination.appendChild(link);
-    }
-  }
-
-  showItems(currentPage);
-  setupPagination();
+function showItems(page) {
+  // page 1:
+  // 1 - 1 = 0 * 20 = 0 <-- startIndex
+  const startIndex = (page - 1) * itemsPerPage;
+  // 0 + 20 = 20 <-- itemsPerPage
+  const endIndex = startIndex + itemsPerPage;
+  // items.slice(0, 20)
+  const pageItems = items.slice(startIndex, endIndex);
 }
