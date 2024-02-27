@@ -2,7 +2,6 @@
   /* CSS HEX */
   --vanilla: #f3e7cc; /* dominant background color / text color on browns */
   --cerulean: #006f87ff; /* main color for text */
-  --non-photo-blue: #9dcecfff;
   --moss-green: #939d5fff; /* accent color / button colors*/
   --hunter-green: #3b562bff;
   --lion: #cca36fff;
@@ -17,7 +16,8 @@ body {
   margin: 0 auto;
 }
 
-header {
+header,
+footer {
   display: flex;
   justify-content: space-around;
   width: 100vw;
@@ -92,9 +92,6 @@ input {
 }
 
 /* displays first 15 listed items */
-.suggestions li:nth-of-type(1n + 20) {
-  display: none;
-}
 
 a {
   color: var(--moss-green);
@@ -107,18 +104,19 @@ a:hover {
   color: var(--gamboge);
 }
 
-.search-button {
-  display: block;
-  background-color: var(--gamboge);
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
+.page-numbers {
+  color: var(--moss-green);
+  border-top: solid 2px var(--moss-green);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 24px;
 }
 
+/* 
 img {
   width: 200px;
   padding: 10px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0px 0px 20px var(--hunter-green);
-}
+} */
