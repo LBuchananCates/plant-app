@@ -5,25 +5,19 @@ let plants = [];
 function displayPlantListings(plants) {
   let suggestionsUl = document.querySelector(".suggestions");
   if (suggestionsUl) {
-    suggestionsUl.textContent = "";
+    // then remove lis
+    suggestionsUl.remove();
   } else {
-    suggestionsUl = document.createElement("ul");
-    suggestionsUl.className = "suggestions";
     const searchForm = document.querySelector("#search-form");
+    suggestionsUl = document.createElement("ul");
+    suggestionsUl.classList.add("suggestions");
     searchForm.appendChild(suggestionsUl);
   }
 
-  // creating inidvidual plant li
+  // put plants inyo li
   plants.forEach((plant) => {
     const plantLi = document.createElement("li");
-    // define anchor tag for href
-    const plantLink = document.createElement("a");
-    // use google.com as link example
-    const plantPage = "http://google.com";
-    plantLink.setAttribute("href", plantPage);
-    plantLink.innerHTML = plant.commonName;
-    // append a tag to plantLi
-    plantLi.appendChild(plantLink);
+    plantLi.textContent = plant.commonName;
     suggestionsUl.appendChild(plantLi);
   });
 }
@@ -54,8 +48,8 @@ fetch(endpoint)
 function groupPages(arr) {
   const pages = [];
   while (arr.length) {
-    // push every 10 into array
-    pages.push(arr.splice(0, 10));
+    // push every 15 into array
+    pages.push(arr.splice(0, 15));
   }
   return pages;
 }
@@ -73,9 +67,11 @@ input.addEventListener("keyup", (e) => {
     // go find plants
     const plantMatches = findMatches(input.value);
     if (plantMatches.length > 0) {
-      displayPlantListings(plantMatches);
       const pages = groupPages(plantMatches);
-      console.log(pages);
+      // console logged the array pages of plants
+      displayPlantListings(pages[0]);
+
+      // for each array displayed: page number and 10 plant names
     } else {
       const suggestionsUl = document.querySelector(".suggestions");
       if (suggestionsUl) {
@@ -88,6 +84,17 @@ input.addEventListener("keyup", (e) => {
       searchForm.appendChild(noResults);
     }
   }, 1000);
+});
+
+// when click outside,
+input.addEventListener("blur", function (e) {
+  console.log("lost focus");
+  // clear suggestionsUl
+  const suggestionsUl = document.querySelector(".suggestions");
+  console.log(suggestionsUl);
+  if (suggestionsUl) {
+    suggestionsUl.remove();
+  }
 });
 
 // make array of arrays for pagination
