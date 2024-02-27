@@ -2,33 +2,71 @@ const endpoint = "../backend/data.json";
 
 let plants = [];
 
-function createPageControls(totalPageNum) {
+function createPageControls(totalPageNum, pages) {
   let pageNum = 1;
-  const li = document.createElement("li");
-  li.classList.add("page-numbers");
   const suggestionsUl = document.querySelector(".suggestions");
-  li.innerText = `${pageNum} of ${totalPageNum}`;
-  suggestionsUl.appendChild(li);
-  //
+
+  // create li
+  const pageControls = document.createElement("div");
+  pageControls.classList.add("page-numbers");
+
+  // create left button
+  const leftButton = document.createElement("button");
+  leftButton.classList.add("page-control__button");
+  leftButton.innerText = "<<<";
+
+  // event listener left
+  leftButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (pageNum > 1) {
+      pageNum--;
+      pee.innerText = `${pageNum} of ${totalPageNum}`;
+      displayPlantListings(pages[pageNum - 1]);
+    }
+  });
+
+  // create pee
+  const pee = document.createElement("p");
+  pee.innerText = `${pageNum} of ${totalPageNum}`;
+
+  // create right button
+  const rightButton = document.createElement("button");
+  rightButton.classList.add("page-control__button");
+  rightButton.innerText = ">>>";
+
+  // event listener right
+  rightButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    const isLastPage = totalPageNum === pageNum;
+    if (!isLastPage) {
+      pageNum++;
+      pee.innerText = `${pageNum} of ${totalPageNum}`;
+      displayPlantListings(pages[pageNum - 1]);
+    }
+  });
+
+  // append arrows to page num li
+  pageControls.prepend(leftButton);
+  // p
+  pageControls.appendChild(pee);
+  pageControls.appendChild(rightButton);
+
+  suggestionsUl.appendChild(pageControls);
 }
 
 function displayPlantListings(plants) {
   let suggestionsUl = document.querySelector(".suggestions");
-  if (suggestionsUl) {
-    // then remove lis
-    suggestionsUl.remove();
-  } else {
-    const searchForm = document.querySelector("#search-form");
-    suggestionsUl = document.createElement("ul");
-    suggestionsUl.classList.add("suggestions");
-    searchForm.appendChild(suggestionsUl);
-  }
-
+  // get rid of all lis
+  const lis = document.querySelectorAll("li");
+  suggestionsUl.children;
+  lis.forEach((li) => {
+    li.remove();
+  });
   // put plants inyo li
   plants.forEach((plant) => {
     const plantLi = document.createElement("li");
     plantLi.textContent = plant.commonName;
-    suggestionsUl.appendChild(plantLi);
+    suggestionsUl.prepend(plantLi);
   });
 }
 
@@ -80,7 +118,8 @@ input.addEventListener("keyup", (e) => {
       const pages = groupPages(plantMatches);
       // console logged the array pages of plants
       displayPlantListings(pages[0]);
-      createPageControls(pages.length);
+
+      createPageControls(pages.length, pages);
 
       // for each array displayed: page number and 10 plant names
     } else {
