@@ -2,6 +2,16 @@ const endpoint = "../backend/data.json";
 
 let plants = [];
 
+function createPageControls(totalPageNum) {
+  let pageNum = 1;
+  const li = document.createElement("li");
+  li.classList.add("page-numbers");
+  const suggestionsUl = document.querySelector(".suggestions");
+  li.innerText = `${pageNum} of ${totalPageNum}`;
+  suggestionsUl.appendChild(li);
+  //
+}
+
 function displayPlantListings(plants) {
   let suggestionsUl = document.querySelector(".suggestions");
   if (suggestionsUl) {
@@ -70,6 +80,7 @@ input.addEventListener("keyup", (e) => {
       const pages = groupPages(plantMatches);
       // console logged the array pages of plants
       displayPlantListings(pages[0]);
+      createPageControls(pages.length);
 
       // for each array displayed: page number and 10 plant names
     } else {
@@ -86,18 +97,15 @@ input.addEventListener("keyup", (e) => {
   }, 1000);
 });
 
+// if suggestionsUl, create buttons
+
 // when click outside,
-input.addEventListener("blur", function (e) {
-  console.log("lost focus");
-  // clear suggestionsUl
-  const suggestionsUl = document.querySelector(".suggestions");
-  console.log(suggestionsUl);
-  if (suggestionsUl) {
-    suggestionsUl.remove();
-  }
-});
-
-// make array of arrays for pagination
-
-// make paginate function that takes array of items, # of items per page, container element to display pagination controls
-// function will create and display pagination controls and update the displayed items based on the selected page.
+// input.addEventListener("blur", function (e) {
+//   console.log("lost focus");
+//   // clear suggestionsUl
+//   const suggestionsUl = document.querySelector(".suggestions");
+//   console.log(suggestionsUl);
+//   if (suggestionsUl) {
+//     suggestionsUl.remove();
+//   }
+// });
