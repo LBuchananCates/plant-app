@@ -91,17 +91,24 @@ input {
   list-style-type: none;
 }
 
-/* displays first 15 listed items */
-
-a {
-  color: var(--moss-green);
+.suggestions li:hover {
   font-size: medium;
   cursor: pointer;
   text-decoration: none;
+  color: var(--gamboge);
 }
 
-a:hover {
-  color: var(--gamboge);
+.page-control__button {
+  border-radius: 10px;
+  background-color: var(--moss-green);
+  color: var(--vanilla);
+  border: none;
+  padding: 0px 25px;
+}
+
+.page-control__button:hover {
+  cursor: pointer;
+  background-color: var(--brown);
 }
 
 .page-numbers {
