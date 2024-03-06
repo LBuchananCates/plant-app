@@ -76,7 +76,15 @@ export function displayPlantListings(plants) {
   // put plants into li
   plants.forEach((plant) => {
     const plantLi = document.createElement("li");
-    plantLi.textContent = plant.commonName;
+    // define anchor tag for href
+    const plantLink = document.createElement("a");
+    // use google.com as link example
+    const plantPage = "http://google.com";
+    plantLink.setAttribute("href", plantPage);
+    plantLink.innerHTML = plant.commonName;
+    // append a tag to plantLi
+    plantLi.appendChild(plantLink);
+
     suggestionsUl.prepend(plantLi);
   });
 }
