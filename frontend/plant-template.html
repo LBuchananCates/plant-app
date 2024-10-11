@@ -1,0 +1,30 @@
+<!-- TODO: Make base template, use javascript to fill in title, name, etc -->
+
+<h1>Fill me in with plant.commonName from URL</h1>
+<p class="watering">
+  put plant cycle here with javascript, ex: "Cycle: `plant.cycle`"
+</p>
+<p>put amount of water needed, ex: `Water needed: `plant.watering`"</p>
+<img src="fill this in with plant.default_image.originalUrl" />
+
+<script>
+  let params = new URLSearchParams(document.location.search);
+  // for (const value of params.values()) {
+  //   console.log(value);
+  // }
+  let plantName = params.get("plantName"); // this has to match exactly whats in the URL
+  console.log("plant name?", plantName);
+
+  const h1 = document.querySelector("h1");
+  h1.innerText = `Page for ${plantName}`;
+
+  // get cycle
+  let plantWatering = params.get("watering");
+  console.log("plant watering schedule", plantWatering);
+
+  // get p tag with clas "watering"
+  const p = document.querySelector(".watering");
+  p.innerText = `This plant has a watering schedule of ${plantWatering}`;
+
+  // image
+</script>

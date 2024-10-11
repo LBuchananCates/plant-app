@@ -75,11 +75,12 @@ export function displayPlantListings(plants) {
 
   // put plants into li
   plants.forEach((plant) => {
+    console.log(plant);
     const plantLi = document.createElement("li");
     // define anchor tag for href
     const plantLink = document.createElement("a");
     // use google.com as link example
-    const plantPage = "http://google.com";
+    const plantPage = `./plant-template.html?plantName=${plant.commonName}&watering=${plant.watering}`;
     plantLink.setAttribute("href", plantPage);
     plantLink.innerHTML = plant.commonName;
     // append a tag to plantLi
@@ -90,7 +91,6 @@ export function displayPlantListings(plants) {
 }
 
 export function findMatches(input, plants) {
-  console.log(input);
   const regex = new RegExp(input.trim(), "gi");
   return plants.filter((plant) => plant.commonName.match(regex));
 }
