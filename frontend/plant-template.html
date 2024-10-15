@@ -1,30 +1,40 @@
 <!-- TODO: Make base template, use javascript to fill in title, name, etc -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Plant Search</title>
+    <link rel="stylesheet" href="plant-search.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/flower-pot.svg" alt="flower icon" />
+      <img src="./images/potted-succulent.svg" alt="potted succulent" />
+      <img src="./images/house-plant-pot.svg" alt="house plant" />
+      <img src="./images/pink-plant.svg" alt="pink plant" />
+      <img src="./images/sun-svg.svg" alt="sun icon" />
+      <img src="./images/growing-plant.svg" alt="growing plant in pot" />
+      <img src="./images/small-pot.svg" alt="smol pot" />
+      <img src="./images/potted-lavender.svg" alt="potted skinny plant" />
+      <img src="./images/potted-dirt-with-plant.svg" alt="pot w dirt & plant" />
+    </header>
 
-<h1>Fill me in with plant.commonName from URL</h1>
-<p class="watering">
-  put plant cycle here with javascript, ex: "Cycle: `plant.cycle`"
-</p>
-<p>put amount of water needed, ex: `Water needed: `plant.watering`"</p>
-<img src="fill this in with plant.default_image.originalUrl" />
-
-<script>
-  let params = new URLSearchParams(document.location.search);
-  // for (const value of params.values()) {
-  //   console.log(value);
-  // }
-  let plantName = params.get("plantName"); // this has to match exactly whats in the URL
-  console.log("plant name?", plantName);
-
-  const h1 = document.querySelector("h1");
-  h1.innerText = `Page for ${plantName}`;
-
-  // get cycle
-  let plantWatering = params.get("watering");
-  console.log("plant watering schedule", plantWatering);
-
-  // get p tag with clas "watering"
-  const p = document.querySelector(".watering");
-  p.innerText = `This plant has a watering schedule of ${plantWatering}`;
-
-  // image
-</script>
+    <footer>
+      <img src="./images/flower-pot.svg" alt="flower icon" />
+      <img src="./images/potted-succulent.svg" alt="potted succulent" />
+      <img src="./images/house-plant-pot.svg" alt="house plant" />
+      <img src="./images/pink-plant.svg" alt="pink plant" />
+      <img src="./images/sun-svg.svg" alt="sun icon" />
+      <img src="./images/growing-plant.svg" alt="growing plant in pot" />
+      <img src="./images/small-pot.svg" alt="smol pot" />
+      <img src="./images/potted-lavender.svg" alt="potted skinny plant" />
+      <img src="./images/potted-dirt-with-plant.svg" alt="pot w dirt & plant" />
+    </footer>
+    <script type="module" src="plant.js" crossorigin="anonymous"></script>
+  </body>
+</html>
