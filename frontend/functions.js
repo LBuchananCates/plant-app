@@ -80,7 +80,10 @@ export function displayPlantListings(plants) {
     // define anchor tag for href
     const plantLink = document.createElement("a");
     // use google.com as link example
-    const plantPage = `./plant-template.html?plantName=${plant.commonName}&watering=${plant.watering}`;
+    let plantPage = `./plant-template.html?plantName=${plant.commonName}&watering=${plant.watering}&scientificName=${plant.scientificName}`;
+    plant.sunlight.forEach(function (item) {
+      plantPage = plantPage.concat(`&sunlight=${item}`);
+    });
     plantLink.setAttribute("href", plantPage);
     plantLink.innerHTML = plant.commonName;
     // append a tag to plantLi
